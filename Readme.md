@@ -1,7 +1,7 @@
 # Личный проект «Пиксель хантер» [![Build status][travis-image]][travis-url]
 
 * Студент: [Илья Дымшиц](https://up.htmlacademy.ru/ecmascript/2/user/220126).
-* Наставник: [Михаил Баранов]
+* Наставник: [Михаил Баранов](https://htmlacademy.ru/profile/id14760).
 
 ---
 

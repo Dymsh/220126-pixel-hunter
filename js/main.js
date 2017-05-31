@@ -1,8 +1,8 @@
-const mainScreen = document.querySelector(`central`);
+const mainScreen = document.querySelector(`.central`);
 const introScreen = document.querySelector(`#intro`);
-const template = Array.from(document.querySelectorAll(`template`));
-const ARROW_RIGHT_KEY_CODE = 37;
-const ARROW_LEFT_KEY_CODE = 39;
+const templates = Array.from(document.querySelectorAll(`template`));
+const ARROW_RIGHT_KEY_CODE = 39;
+const ARROW_LEFT_KEY_CODE = 37;
 let screenIndex = 0;
 
 const addIntroTemplate = () => {
@@ -14,12 +14,12 @@ addIntroTemplate();
 
 const showScreen = (screen) => {
   mainScreen.innerHTML = ``;
-  mainScreen.appendChild(template[screen].content.cloneNode(true));
+  mainScreen.appendChild(templates[screen].content.cloneNode(true));
 };
 
-showScreen();
+showScreen(screenIndex);
 const nextScreen = () => {
-  if (screenIndex < template.length - 1) {
+  if (screenIndex < templates.length - 1) {
     screenIndex++;
     showScreen(screenIndex);
   }

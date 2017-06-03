@@ -1,7 +1,7 @@
 import showNode from './modules/showNode.js';
 import getNodeFromTemplate from './modules/getNodeFromTemplate.js';
 import game1Node from './game1.js';
-// import {greetingNode} from './greeting.js';
+import greetingNode from './greeting.js';
 
 const rulesLayout = `
 <header class="header">
@@ -56,9 +56,9 @@ btnSubmit.onclick = () => {
   showNode(game1Node);
 };
 
-export default rulesNode;
-/*
 const backToGreeting = rulesNode.querySelector(`.back`);
 backToGreeting.onclick = () => {
   showNode(greetingNode);
-};*/
+};
+
+export default rulesNode;

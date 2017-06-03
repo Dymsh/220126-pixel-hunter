@@ -1,7 +1,7 @@
 import showNode from './modules/showNode.js';
 import getNodeFromTemplate from './modules/getNodeFromTemplate.js';
 import statsNode from './stats.js';
-// import {greetingNode} from './greeting.js';
+import greetingNode from './greeting.js';
 
 const game3Layout = `
 <header class="header">
@@ -65,9 +65,9 @@ game3Screen.forEach(function (el) {
   el.onclick = () => showNode(statsNode);
 });
 
-export default game3Node;
-/*
 const backToGreeting = game3Node.querySelector(`.back`);
 backToGreeting.onclick = () => {
   showNode(greetingNode);
-};*/
+};
+
+export default game3Node;

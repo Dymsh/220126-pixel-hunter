@@ -1,7 +1,7 @@
 import showNode from './modules/showNode.js';
 import getNodeFromTemplate from './modules/getNodeFromTemplate.js';
 import game3Node from './game3.js';
-// import {greetingNode} from './greeting.js';
+import greetingNode from './greeting.js';
 
 const game2Layout = `
 <header class="header">
@@ -69,9 +69,9 @@ formGame2.onclick = () => {
   }
 };
 
-export default game2Node;
-/*
 const backToGreeting = game2Node.querySelector(`.back`);
 backToGreeting.onclick = () => {
   showNode(greetingNode);
-};*/
+};
+
+export default game2Node;

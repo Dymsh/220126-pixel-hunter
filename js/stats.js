@@ -1,5 +1,5 @@
-// import {showNode} from './modules/showNode.js';
-// import {greetingNode} from './greeting.js';
+import showNode from './modules/showNode.js';
+import greetingNode from './greeting.js';
 import getNodeFromTemplate from './modules/getNodeFromTemplate.js';
 
 const statsLayout = `
@@ -124,10 +124,10 @@ const statsLayout = `
 `;
 
 const statsNode = getNodeFromTemplate(statsLayout);
-export default statsNode;
-/*
-const backToGreeting = statsNode.querySelector(`.back`);
 
+const backToGreeting = statsNode.querySelector(`.back`);
 backToGreeting.onclick = () => {
   showNode(greetingNode);
-};*/
+};
+
+export default statsNode;

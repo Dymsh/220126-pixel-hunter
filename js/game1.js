@@ -1,7 +1,7 @@
 import showNode from './modules/showNode.js';
 import getNodeFromTemplate from './modules/getNodeFromTemplate.js';
 import game2Node from './game2.js';
-// import {greetingNode} from './greeting.js';
+import greetingNode from './greeting.js';
 
 const game1Layout = `
 <header class="header">
@@ -80,18 +80,12 @@ formGame1.onclick = () => {
   if (inputs.length === 2) {
     showNode(game2Node);
   }
-/*  let count = 0;
-  for (let i = 0; i < formGame1.elements.length; i++) {
-    count += +formGame1.elements[i].checked;
-  }
-  if (count === 2) {
-    showNode(game2Node);
-  }*/
+
 };
 
-export default game1Node;
-/*
 const backToGreeting = game1Node.querySelector(`.back`);
 backToGreeting.onclick = () => {
   showNode(greetingNode);
-};*/
+};
+
+export default game1Node;

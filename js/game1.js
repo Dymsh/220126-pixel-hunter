@@ -2,22 +2,11 @@ import showNode from './modules/showNode.js';
 import getNodeFromTemplate from './modules/getNodeFromTemplate.js';
 import game2Node from './game2.js';
 import greetingNode from './greeting.js';
+import {header, gameBlock} from './header.js';
+import footer from './footer.js';
 
 const game1Layout = `
-<header class="header">
-  <div class="header__back">
-    <span class="back">
-      <img src="img/arrow_left.svg" width="45" height="45" alt="Back">
-      <img src="img/logo_small.png" width="101" height="44">
-    </span>
-  </div>
-  <h1 class="game__timer">NN</h1>
-  <div class="game__lives">
-    <img src="img/heart__empty.svg" class="game__heart" alt="Life" width="32" height="32">
-    <img src="img/heart__full.svg" class="game__heart" alt="Life" width="32" height="32">
-    <img src="img/heart__full.svg" class="game__heart" alt="Life" width="32" height="32">
-  </div>
-</header>
+${header(gameBlock)}
 <div class="game">
   <p class="game__task">Угадайте для каждого изображения фото или рисунок?</p>
   <form class="game__content">
@@ -59,17 +48,7 @@ const game1Layout = `
     </ul>
   </div>
 </div>
-<footer class="footer">
-  <a href="https://htmlacademy.ru" class="social-link social-link--academy">HTML Academy</a>
-  <span class="footer__made-in">Сделано в <a href="https://htmlacademy.ru" class="footer__link">HTML Academy</a> &copy; 2016</span>
-  <div class="footer__social-links">
-    <a href="https://twitter.com/htmlacademy_ru" class="social-link  social-link--tw">Твиттер</a>
-    <a href="https://www.instagram.com/htmlacademy/" class="social-link  social-link--ins">Инстаграм</a>
-    <a href="https://www.facebook.com/htmlacademy" class="social-link  social-link--fb">Фэйсбук</a>
-    <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
-  </div>
-</footer>
-</footer>
+${footer()}
 `;
 
 const game1Node = getNodeFromTemplate(game1Layout);
